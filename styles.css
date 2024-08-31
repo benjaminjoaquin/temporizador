@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Ajustar más arriba */
+    height: 100vh;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Color de texto blanco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 50px; /* Ajustar más arriba */
+}
+
+.countdown-container {
+    text-align: center;
+    background: #1e1e1e; /* Fondo del contenedor más oscuro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3em; /* Aumentar el tamaño del texto */
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+h2 {
+    font-size: 2em; /* Aumentar el tamaño del texto */
+    margin-bottom: 30px; /* Más espacio debajo del título */
+    color: #bbbbbb;
+}
+
+.countdown {
+    font-size: 5em; /* Hacer los números más grandes */
+    color: #ff6347; /* Cambiar el color de los números */
+}
