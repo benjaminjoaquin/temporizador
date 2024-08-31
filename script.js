@@ -1,6 +1,6 @@
 // Configuración de la fecha objetivo
-const targetDate = new Date("December 31, 2024 23:59:59").getTime(); // Cambia a tu fecha objetivo
-const countdownName = "Año Nuevo 2025"; // Cambia el nombre de tu cuenta atrás
+const targetDate = new Date("September 17, 2024 23:59:59").getTime(); // Cambia a tu fecha objetivo
+const countdownName = "Fin materias"; // Cambia el nombre de tu cuenta atrás
 
 // Actualiza el nombre de la cuenta atrás
 document.getElementById('countdown-name').textContent = countdownName;
