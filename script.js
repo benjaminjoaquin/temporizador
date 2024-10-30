@@ -1,6 +1,6 @@
 // Configuración de la fecha objetivo
-const targetDate = new Date("September 17, 2024 23:59:59").getTime(); // Cambia a tu fecha objetivo
-const countdownName = "Fin materias"; // Cambia el nombre de tu cuenta atrás
+const targetDate = new Date("December 4, 2024 23:59:59").getTime(); // Cambia a tu fecha objetivo
+const countdownName = "Fin"; // Cambia el nombre de tu cuenta atrás
 
 // Actualiza el nombre de la cuenta atrás
 document.getElementById('countdown-name').textContent = countdownName;
@@ -13,13 +13,18 @@ const countdownInterval = setInterval(function() {
     if (timeDiff <= 0) {
         clearInterval(countdownInterval);
         document.getElementById("countdown").textContent = "¡Tiempo Finalizado!";
+        document.title = "¡Tiempo Finalizado!";
         return;
     }
 
     const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+    const minutes = Math.floor((timeDiff % (1000 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
+    // Actualiza el contenido en la página
     document.getElementById("countdown").textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    // Actualiza el título de la pestaña
+    document.title = `${countdownName}: ${days}d ${hours}h ${minutes}m ${seconds}s`;
 }, 1000);
