@@ -1,5 +1,5 @@
 // Configuración de la fecha objetivo
-const targetDate = new Date("December 4, 2024 23:59:59").getTime(); // Cambia a tu fecha objetivo
+const targetDate = new Date("September 12, 2026 23:59:59").getTime(); // Cambia a tu fecha objetivo
 const countdownName = "Fin"; // Cambia el nombre de tu cuenta atrás
 
 // Actualiza el nombre de la cuenta atrás
